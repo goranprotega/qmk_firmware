@@ -14,7 +14,7 @@
 #define CRO_BSP  LT(_CRO, KC_BSPC)
 
 // Left-hand home row mods
-#define GUI_A LGUI_T(KC_A)
+//#define GUI_A LGUI_T(KC_A)
 #define ALT_S LALT_T(KC_S)
 #define CTL_D LCTL_T(KC_D)
 #define SFT_F SFT_T(KC_F)
@@ -23,7 +23,7 @@
 #define SFT_J RSFT_T(KC_J)
 #define CTL_K RCTL_T(KC_K)
 #define ALT_L LALT_T(KC_L)
-#define GUI_SCLN RGUI_T(KC_SCLN)
+//#define GUI_SCLN RGUI_T(KC_SCLN)
 
 /*
 // define combo names
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       */
     [_BASE] = LAYOUT_split_3x6_3(
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
-        KC_LCTL, GUI_A, ALT_S, CTL_D, SFT_F,    KC_G,                               KC_H,    SFT_J, CTL_K, ALT_L,    GUI_SCLN, KC_LALT,
+        KC_LCTL, KC_A, ALT_S, CTL_D, SFT_F,    KC_G,                               KC_H,    SFT_J, CTL_K, ALT_L,    KC_SCLN, KC_LALT,
         KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_KP_SLASH, KC_RSFT,
                                             ARROW_ESC, NUM_SPC, CRO_BSP,          KC_SPC, KC_ENT, KC_RSFT
     ),
@@ -93,14 +93,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_ARROW] = LAYOUT_split_3x6_3(
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               C(KC_X),    KC_U,    KC_UP,    KC_O,    KC_P,    KC_BSPC,
-        KC_LCTL, GUI_A, ALT_S, CTL_D, SFT_F,    KC_G,                               LCTL(KC_V),    KC_LEFT,    KC_DOWN,    KC_RIGHT,    KC_SCLN, KC_QUOT,
+        KC_LCTL, KC_A, ALT_S, CTL_D, SFT_F,    KC_G,                               LCTL(KC_V),    KC_LEFT,    KC_DOWN,    KC_RIGHT,    KC_SCLN, KC_QUOT,
         KC_LSFT, KC_Y,    KC_X,    KC_C,    KC_V,    KC_B,                               LCTL(KC_C),    KC_M,    KC_COMM, KC_DOT,  KC_KP_SLASH, KC_RSFT,
                                             KC_TRNS, KC_TRNS, KC_TRNS,          KC_SPC, KC_ENT, KC_RSFT
     ),
 
     [_CRO] = LAYOUT_split_3x6_3(
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_HASH,    KC_U,    KC_UP,    KC_O,    KC_P,    KC_BSPC,
-        KC_LCTL, GUI_A, ALT_S, CTL_D, SFT_F,    KC_G,                               KC_SCLN, KC_QUOT,    KC_RIGHT_BRACKET,    KC_LEFT_BRACKET,    KC_NONUS_HASH, KC_QUOT,
+        KC_LCTL, KC_A, ALT_S, CTL_D, SFT_F,    KC_G,                               KC_SCLN, KC_QUOT,    KC_RIGHT_BRACKET,    KC_LEFT_BRACKET,    KC_NONUS_HASH, KC_QUOT,
         KC_LSFT, KC_Y,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_KP_SLASH, KC_RSFT,
                                             KC_TRNS, KC_TRNS, KC_TRNS,          KC_SPC, KC_ENT, KC_RSFT
     )
