@@ -2,8 +2,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #pragma once
-#define MASTER_LEFT
-#define SPLIT_USB_DETECT
 
 // Some boards have issues detecting handedness using the vbus voltage.
 // Such as Elite-C v3, but not v3.1 on. Also apparently some ProMicro boards.

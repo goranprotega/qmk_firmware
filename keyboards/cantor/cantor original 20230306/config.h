@@ -9,23 +9,6 @@
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 6
 
-#define COMBO_TERM 200
-#define COMBO_COUNT 7
-
-// Configure the global tapping term (default: 200ms)
-#define TAPPING_TERM 200
-
-// Prevent normal rollover on alphas from accidentally triggering mods.
-#define IGNORE_MOD_TAP_INTERRUPT
-
-// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
-#define QUICK_TAP_TERM 0
-
-
-//#define COMBO_TERM 25        // how quickly all combo keys must be pressed in succession to trigger
-//#define COMBO_MUST_HOLD_MODS // if a combo triggers a modifier, only trigger when the combo is held
-//#define COMBO_HOLD_TERM 175  // how long at least one of the combo keys must be held to trigger
-
 #define DIRECT_PINS {{B1, B10, A8, B15, B14, B13}, \
                      {B9, B8, B5, B4, B3, A15}, \
                      {A3, A4, A5, A6, A7, B0}, \
@@ -61,7 +44,3 @@
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
-
-#define TAPPING_TERM 200
-//#define IGNORE_MOD_TAP_INTERRUPT
-//#define PERMISSIVE_HOLD
