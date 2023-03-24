@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_CRO] = LAYOUT_split_3x6_3(
-        KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    C(KC_X),                                  KC_QUES,    KC_EXLM,    KC_MINUS,    KC_O,    KC_P,          KC_BSPC,
+        KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    C(KC_X),                                  LSFT(KC_UNDS),    KC_EXLM,    KC_KP_MINUS,    KC_O,    KC_P,          KC_BSPC,
         KC_LCTL, KC_A, 	  KC_S,    KC_D,    KC_F,    LCTL(KC_V),                               KC_SCLN,    KC_QUOT,    KC_RIGHT_BRACKET,     KC_LEFT_BRACKET,    KC_NONUS_HASH, KC_LALT,
         KC_LSFT, KC_Y,    KC_X,    KC_C,    KC_V,    LCTL(KC_C),                               KC_N,       KC_M,       KC_COMM,              KC_DOT,  KC_KP_SLASH, KC_RSFT,
                                             KC_TRNS, KC_TRNS, KC_TRNS,          KC_ENT, KC_SPC, KC_RSFT
